@@ -7,5 +7,5 @@ It is merely for learning purposes.
 
 ## Agenda
 September 14th, 2019 
-        setting up environment
-        creating skeleton web application
+* setting up environment
+* creating skeleton web application
