@@ -11,7 +11,6 @@ Vue.use(VueRouter);
 const router = new VueRouter({
   routes: Routes,
 });
-
 new Vue({
   render: h => h(App),
   router,

@@ -11,9 +11,10 @@ app.config.from_object(__name__)
 # enable CORS
 CORS(app, resources={r'/*': {'origins': '*'}})
 
+
 @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')
-def catch_all():
+def catch_all(path):
     return render_template("index.html")
 
 
@@ -21,9 +22,10 @@ def catch_all():
 def random_number():
     print("YOU GOT HERE")
     response = {
-        'data': "HELLO!"
+        'data': "AHHH!"
     }
     return jsonify(response)
+
 
 if __name__ == '__main__':
     app.run()
