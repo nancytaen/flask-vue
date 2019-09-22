@@ -5,7 +5,7 @@ from sqlalchemy import create_engine, MetaData
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-url = 'mysql://taen:west.tower.805.@localhost/mydatabase?charset=utf8'
+url = 'mysql://taen:pQ2"syHBKT]N"8-j@localhost/mydatabase?charset=utf8'
 engine = create_engine(url, echo=True)
 
 # create a configured "Session" class
