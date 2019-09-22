@@ -101,3 +101,23 @@ https://flaviocopes.com/vue-router/
 https://wpism.com/publish-local-project-github-command-line/
 
 and others such as stackoverflow, official websites, etc.
+
+September 21th, 2019
+* installing sqlalchemy, MYSQL, and connecting them
+* testing connections for creating table and inserting data
+
+Setting up sqlalchemy and MYSQL database is the last step in the large-level environment setup for this project. 
+
+## Steps:
+* install MYSQL, add it to windows' environment setting, and setup the user and databases
+* install sqlalchemy (via pip), mysqlclient, place them in site packages
+* connect database with create_engine, setup database objects, and add them via metadata
+* enable importing functions from other modules via setting server directory as source root
+
+Through this process, I did encounter some problems, mainly regarding unrecognized modules, and determining ways to test the reflection of sqlalchemy codes onto the database. The former problem was mainly solved by adding paths, adding files in site packages, and selecting some high-level directories as source roots. Even thought I encountered similar problems in previous days, I still took quite some time to solve them. I really need to remember PATHS/ SOURCE ROOT/ PACKAGE INTREPRETER!!
+
+The latter problem was mainly due to the absence of my knowledge for configuration codes. There were many source codes online, but it took time and several trial-and-errors to select and implement the codes that suit my project. Since this is my first project, I value simplicity. (Note: at my previous intern, we used 'alembic' to reflect table objects to the db, which require more configs and setup, along with calling the commands every single time...! This is my solo project, so I will not implement that method for this project)
+
+I wrote some codes using sqlalchemy (e.g. create table objects, insert data into existing table), and checked the data reflection using MYSQL commands in command prompt. mysql -u user -p, show databases, etc. etc.
+
+Now, I am ready to start my project! 
